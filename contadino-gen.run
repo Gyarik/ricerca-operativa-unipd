@@ -1,6 +1,6 @@
 reset;
 model prodotti.mod;
-data prodotti.dat;
+data contadino-gen.dat;
 option solver cplex;
 solve;
-display profitto;
+display profitto, x;

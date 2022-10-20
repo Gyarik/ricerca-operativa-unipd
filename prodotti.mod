@@ -1,13 +1,13 @@
-set I;	#prodotti
-set J;	#risorse
+set Prodotti;
+set Risorse;
 
-#parametri
-param maxNumProd;
-param P{I};		#profitto unitario
-param Q{J};		#disponibilita' risorsa
-param A{I, J};	#risorsa per unita' di prodotto
+param maxNumProd{Prodotti};
+param P{Prodotti};		        # profitto unitario
+param Q{Risorse};		        # disponibilita' risorsa
+param A{Prodotti, Risorse};	    # risorsa per unita' di prodotto
 
-var x{I} >= 0, <= maxNumProd;
+var x{i in Prodotti} integer >= 0, <= maxNumProd[i];
 
-maximize profitto: sum{i in I} P[i] * x[i];
-s.t. disponib{j in J}: sum{i in I} A[i, j] * x[i] <= Q[j];
+maximize profitto: sum{i in Prodotti} P[i] * x[i];
+s.t. disponib{j in Risorse}:
+    sum{i in Prodotti} A[i, j] * x[i] <= Q[j];
