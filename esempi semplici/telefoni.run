@@ -1,0 +1,5 @@
+reset;
+model telefoni.mod;
+option solver cplex;
+solve;
+display xA, xB, guadagno;

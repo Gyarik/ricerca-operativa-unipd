@@ -1,5 +1,0 @@
-reset;
-model contadino.mod;
-option solver gurobi;
-solve;
-display resa, xL, xP;
