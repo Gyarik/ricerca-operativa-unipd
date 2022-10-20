@@ -1,0 +1,6 @@
+reset;
+model prodotti.mod;
+data prodotti.dat;
+option solver cplex;
+solve;
+display profitto;
