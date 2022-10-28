@@ -1,6 +1,6 @@
-var x1 >= 20;    # quantita' verdura
-var x2 >= 30;    # quantita' carne
-var x3 >= 10;    # quantita' frutta
+var x1 >= 0;    # quantita' verdura
+var x2 >= 0;    # quantita' carne
+var x3 >= 0;    # quantita' frutta
 
 # costo giornaliero dieta
 minimize costo: 4 * x1 + 10 * x2 + 7 * x3;
