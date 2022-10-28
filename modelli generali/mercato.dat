@@ -1,0 +1,16 @@
+set Risorse := mattino sera;
+set Domande := donne_s donne_n uomini_s uomini_n;
+
+param C :=
+mattino     1.1
+sera        1.6;
+
+param D :=
+donne_s     150
+donne_n     110
+uomini_s    120
+uomini_n    100;
+
+param A: donne_s donne_n uomini_s uomini_n :=
+mattino  0.3     0.1     0.1      0.1
+sera     0.3     0.2     0.3      0.15;
