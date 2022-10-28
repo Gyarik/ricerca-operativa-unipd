@@ -1,0 +1,6 @@
+reset;
+model prodotti-lim.mod;
+data telefoni-lim.dat;
+option solver cplex;
+solve;
+display profitto, x;

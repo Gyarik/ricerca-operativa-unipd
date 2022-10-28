@@ -1,0 +1,22 @@
+set Prodotti := telA telB;
+set Risorse := display navigazione tastierini logica trasmissione led;
+
+param maxNumProd :=
+telA    5
+telB    8;
+
+param P :=
+telA    3
+telB    6;
+
+param Q :=
+display         10
+navigazione     9
+tastierini      21
+logica          18
+trasmissione    12
+led             10;
+
+param A: display navigazione tastierini logica trasmissione led :=
+telA     1       1           2          2      1            1
+telB     2       0           3          2      3            0;
