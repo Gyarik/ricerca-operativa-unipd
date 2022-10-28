@@ -1,17 +1,21 @@
-set Risorse := verdura carne frutta;
+set Risorse := verdura carne frutta pesce;
 set Domande := proteine ferro calcio;
+
+param minRis :=
+pesce       3;
 
 param C :=
 verdura     4
 carne       10
-frutta      7;
+frutta      7
+pesce       3;
 
 param D :=
 proteine    20
 ferro       30
 calcio      10;
 
-param A (tr): verdura carne frutta :=
-proteine      5       15    4
-ferro         6       10    5
-calcio        5       3     12;
+param A (tr): verdura carne frutta pesce :=
+proteine      5       15    4      10
+ferro         6       10    5      15
+calcio        5       3     12     2;

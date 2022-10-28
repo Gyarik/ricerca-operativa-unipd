@@ -1,11 +1,12 @@
 set Risorse;
 set Domande;
 
+param minRis{Risorse} default 0;
 param C{Risorse};
 param D{Domande};
 param A{Risorse, Domande};
 
-var x{i in Risorse} >= 0 integer;
+var x{i in Risorse} integer >= minRis[i];
 
 minimize costo: sum{i in Risorse} C[i] * x[i];
 s.t. soddisf{j in Domande}:
