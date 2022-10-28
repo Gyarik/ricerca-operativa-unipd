@@ -1,0 +1,6 @@
+reset;
+model dieta.mod;
+data dieta-gen.dat;
+option solver cplex;
+solve;
+display costo, x;
