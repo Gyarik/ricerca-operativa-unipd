@@ -1,9 +1,7 @@
 set Prodotti := lattuga patata;
 set Risorse := ettari semi tuberi concime;
 
-param maxNumProd := 
-lattuga     7
-patata      7;
+param maxNumProd := 7;
 
 param P :=
 lattuga		3000
