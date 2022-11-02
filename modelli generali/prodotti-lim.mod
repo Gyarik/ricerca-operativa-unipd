@@ -1,13 +1,16 @@
-set Prodotti;
-set Risorse;
+set Prodotti;   # Insieme dei prodotti
+set Risorse;    # Insieme delle risorse
 
-param maxNumProd{Prodotti};
-param P{Prodotti};		        # profitto unitario
-param Q{Risorse};		        # disponibilita' risorsa
-param A{Prodotti, Risorse};	    # risorsa per unita' di prodotto
+param maxNumProd{Prodotti};     # Massimo numero di prodotti
+param P{Prodotti};		        # Profitto unitario
+param Q{Risorse};		        # Disponibilita' risorsa
+param A{Prodotti, Risorse};	    # Risorsa per unita' di prodotto
 
-var x{i in Prodotti} >= 0, <= maxNumProd[i] integer;
+var x{i in Prodotti} >= 0, <= maxNumProd[i] integer;    # Incognita
 
+# Funzione obiettivo: massimizza il profitto totale
 maximize profitto: sum{i in Prodotti} P[i] * x[i];
+
+# Condizioni/Vincoli
 s.t. disponib{j in Risorse}:
-    sum{i in Prodotti} A[i, j] * x[i] <= Q[j];
+    sum{i in Prodotti} A[i, j] * x[i] <= Q[j];  # Massima disponibilita'
