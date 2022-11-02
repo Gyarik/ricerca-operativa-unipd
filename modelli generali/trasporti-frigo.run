@@ -1,0 +1,8 @@
+reset;
+model trasporti.mod
+data trasporti-frigo.dat;
+option solver xpress;
+solve;
+display costo;
+# display x;
+display {i in Origini, j in Destinazioni: x[i, j] > 0} x[i, j];
