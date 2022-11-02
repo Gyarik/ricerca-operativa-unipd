@@ -1,0 +1,32 @@
+set Stabilimenti := Italia Cina Francia;
+set Banche := AntonVeneta Intesa Unicredit CredSuisse BancaCina;
+
+param P :=
+Italia      220
+Cina        180
+Francia     200;
+
+param T (tr): Italia   Cina   Francia :=
+AntonVeneta   6.9      13.0   6.3
+Intesa        5.5      15.0   6.0
+Unicredit     7.5      14.3   7.8
+CredSuisse    8.0      16.4   6.8
+BancaCina     10.3     5.0    11.0;
+
+param C :=
+Italia      10000
+Cina        20000
+Francia     10000;
+
+param R :=
+AntonVeneta     9700
+Intesa          7100
+Unicredit       3400
+CredSuisse      5200
+BancaCina       3050;
+
+param S := Italia;
+
+param A := 0.25;
+
+param B := 0.30;

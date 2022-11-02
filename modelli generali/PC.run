@@ -1,0 +1,7 @@
+reset;
+model PC.mod;
+data PC.dat;
+option solver xpress;
+solve;
+display costo;
+display {i in Stabilimenti, j in Banche: x[i,j] > 0} x[i,j];
