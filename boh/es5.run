@@ -1,0 +1,6 @@
+reset;
+model es4.mod;
+data es5.dat;
+option solver cplex;
+solve;
+display func, x, y;

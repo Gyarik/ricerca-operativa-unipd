@@ -1,0 +1,21 @@
+set I := linea1 linea2;
+set J := auto moto bici;
+
+param C :   auto moto bici :=
+linea1      6    4    2
+linea2      5    3    1;
+
+param : F   D :=
+linea1  10  800
+linea2  15  900;
+
+param A :   auto moto bici :=
+linea1      2    4    6
+linea2      3    5    7;
+
+param B :=
+auto    100
+moto    200
+bici    300;
+
+param M := 1000;

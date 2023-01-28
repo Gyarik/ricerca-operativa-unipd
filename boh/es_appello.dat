@@ -1,0 +1,21 @@
+set I := Croazia Svezia GB Canada;
+set J := Italia Francia Germania;
+
+param :     O       F :=
+Croazia     1000    1000
+Svezia      2000    1000
+GB          3000    1000
+Canada      4000    1000;
+
+param D :=
+Italia      5000
+Francia     3000
+Germania    2000;
+
+param N := 4;
+
+param C :   Italia Francia Germania :=
+Croazia     10     20      30
+Svezia      40     50      60
+GB          70     80      90
+Canada      100    110     120;

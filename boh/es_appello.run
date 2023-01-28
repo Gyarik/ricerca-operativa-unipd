@@ -1,0 +1,6 @@
+reset;
+model es_appello.mod;
+data es_appello.dat;
+option solver cplex;
+solve;
+display f, x, y;
