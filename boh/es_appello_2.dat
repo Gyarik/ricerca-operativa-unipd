@@ -1,0 +1,24 @@
+set I := Gino Carlo Mario;
+set J := Eroina Cocaina;
+set K := Crack MDMA Bendaryl;
+
+param P :=
+Crack       25
+MDMA        100
+Bendaryl    15;
+
+param C : Eroina Cocaina :=
+Gino      30     50
+Carlo     45     75
+Mario     20     35;
+
+param : F   M :=
+Gino    5   10000
+Carlo   15  5000
+Mario   2   1000000;
+
+param B := 50000;
+
+param Q : Crack MDMA Bendaryl :=
+Eroina    10    15   20
+Cocaina   5     50   10;
